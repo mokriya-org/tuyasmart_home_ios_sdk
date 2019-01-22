@@ -144,6 +144,11 @@
 		3F632C8621F752D0008966A4 /* TuyaSmartSceneModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F632BB421F74EE5008966A4 /* TuyaSmartSceneModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F632C8721F752DB008966A4 /* TuyaSmartTimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F632BB721F74EF9008966A4 /* TuyaSmartTimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F632C8821F752DB008966A4 /* TuyaSmartTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F632BB821F74EF9008966A4 /* TuyaSmartTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F632C8E21F7591A008966A4 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F632C8B21F75911008966A4 /* YYModel.framework */; };
+		3F632C8F21F7591C008966A4 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F632C8D21F75911008966A4 /* Reachability.framework */; };
+		3F632C9021F75941008966A4 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F632C8921F75911008966A4 /* CocoaAsyncSocket.framework */; };
+		3F632C9121F75944008966A4 /* MQTTClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F632C8C21F75911008966A4 /* MQTTClient.framework */; };
+		3F632C9221F75956008966A4 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F632C8A21F75911008966A4 /* UICKeyChainStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -280,6 +285,11 @@
 		3F632C1C21F7504F008966A4 /* TuyaSmartSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TuyaSmartSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F632C2921F7505D008966A4 /* TuyaSmartTimerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TuyaSmartTimerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F632C3221F75090008966A4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3F632C8921F75911008966A4 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		3F632C8A21F75911008966A4 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = Carthage/Build/iOS/UICKeyChainStore.framework; sourceTree = "<group>"; };
+		3F632C8B21F75911008966A4 /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
+		3F632C8C21F75911008966A4 /* MQTTClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MQTTClient.framework; path = Carthage/Build/iOS/MQTTClient.framework; sourceTree = "<group>"; };
+		3F632C8D21F75911008966A4 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +300,7 @@
 				3F632B0F21F73B4B008966A4 /* SystemConfiguration.framework in Frameworks */,
 				3F632B0D21F73B46008966A4 /* Foundation.framework in Frameworks */,
 				3F632B0B21F73B3B008966A4 /* CoreTelephony.framework in Frameworks */,
+				3F632C9221F75956008966A4 /* UICKeyChainStore.framework in Frameworks */,
 				3F632AF721F73A7B008966A4 /* TuyaSmartUtil in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +323,8 @@
 				3F632C3421F750B6008966A4 /* TuyaSmartUtil.framework in Frameworks */,
 				3F632BCE21F74F75008966A4 /* CoreTelephony.framework in Frameworks */,
 				3F632BCD21F74F70008966A4 /* CoreData.framework in Frameworks */,
+				3F632C8E21F7591A008966A4 /* YYModel.framework in Frameworks */,
+				3F632C8F21F7591C008966A4 /* Reachability.framework in Frameworks */,
 				3F632BCB21F74F6B008966A4 /* libz.tbd in Frameworks */,
 				3F632BD521F74FDE008966A4 /* TuyaSmartBaseKit in Frameworks */,
 				3F632BC921F74F62008966A4 /* libc++.tbd in Frameworks */,
@@ -350,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F632C3D21F7513D008966A4 /* TuyaSmartBaseKit.framework in Frameworks */,
+				3F632C9021F75941008966A4 /* CocoaAsyncSocket.framework in Frameworks */,
+				3F632C9121F75944008966A4 /* MQTTClient.framework in Frameworks */,
 				3F632C4621F75264008966A4 /* TuyaSmartDeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +491,11 @@
 		3F632B0921F73B3A008966A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F632C8921F75911008966A4 /* CocoaAsyncSocket.framework */,
+				3F632C8C21F75911008966A4 /* MQTTClient.framework */,
+				3F632C8D21F75911008966A4 /* Reachability.framework */,
+				3F632C8A21F75911008966A4 /* UICKeyChainStore.framework */,
+				3F632C8B21F75911008966A4 /* YYModel.framework */,
 				3F632C3221F75090008966A4 /* CoreBluetooth.framework */,
 				3F632BCC21F74F70008966A4 /* CoreData.framework */,
 				3F632BCA21F74F6B008966A4 /* libz.tbd */,
@@ -1386,6 +1406,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1411,6 +1435,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1483,6 +1511,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1511,6 +1543,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1651,6 +1687,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1679,6 +1719,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

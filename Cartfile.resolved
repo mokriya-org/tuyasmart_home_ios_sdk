@@ -1,0 +1,5 @@
+github "ibireme/YYModel" "1.0.4"
+github "kishikawakatsumi/UICKeyChainStore" "v2.1.2"
+github "mokriya-org/Reachability" "v3.2.1"
+github "novastone-media/MQTT-Client-Framework" "0.14.0"
+github "robbiehanson/CocoaAsyncSocket" "7.6.3"

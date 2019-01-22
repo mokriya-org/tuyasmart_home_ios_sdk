@@ -1,0 +1,11 @@
+# TuyaSmartBaseKit
+github "ibireme/YYModel"
+github "mokriya-org/Reachability"
+
+# TuyaSmartDeviceKit
+github "robbiehanson/CocoaAsyncSocket"
+github "novastone-media/MQTT-Client-Framework" == 0.14.0
+
+# TuyaSmartUtil
+github "kishikawakatsumi/UICKeyChainStore"
+
