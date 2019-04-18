@@ -1,5 +1,16 @@
 # TuyaSmartHomeKit iOS SDK Change Log
 
+## 2.8.44(2019-03-28)
+
+- 修复 Wi-Fi 子设备在线异常问题
+- Fixed an online problem with Wi-Fi subdevices
+
+## 2.8.43(2019-03-15)
+
+- 新的加密方式：需要在涂鸦开发者平台申请应用的 Appkey，AppSecret，iOS安全图片，bundleId
+
+- New encryption:  Appkey, AppSecret, iOS security images, bundleId for application on Tuya Developer Platform
+
 ## 0.2.2(2019-01-19)
 bug fixed
 
