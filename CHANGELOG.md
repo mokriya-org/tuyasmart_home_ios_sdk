@@ -1,5 +1,75 @@
 # TuyaSmartHomeKit iOS SDK Change Log
 
+## 3.14.0(2019-12-21)
+
+- 新增功能
+  - `MQTTClient` 升级到 `0.15.2` 版本
+  - HTTP 请求和响应数据加密
+  - 新增家庭角色权限管理
+  - 场景 SDK 增加缓存
+  - 增加创建场景条件和场景动作的便捷工具类
+  - bug fixed
+- New Feature
+  - `MQTTClient` use `0.15.2`
+  - HTTP request and response data encryption
+  - Manager more family member role
+  - Add scene cache
+  - Add scene conditions and actions class
+  - Bug fixed
+
+## 3.13.0(2019-12-06)
+
+* 新增功能
+  - 支持标准DPCode 控制
+  - 家庭权限角色支持多样性
+* New Feature
+  * Support DP Code Control
+  * Support more family member role
+
+
+
+## 3.12.0(2019-09-21)
+
+- 功能变化
+
+  - 设备支持更新头像
+  - 支持wifi和蓝牙双模设备
+  - 支持子设备OTA
+  - 固件升级添加升级中的代理回调
+  - AP 配网优化
+  - 定时支持备注和推送功能
+  - 支持 SigMesh 设备
+  - bug 修复
+
+- Functional change
+
+  - Device Support Update Head Image
+
+  - Support Wifi and Bluetooth Dual-mode Devices
+
+  - Support sub device OTA
+
+  - firmware upgrade to add  callbacks in upgrading
+  - AP Distribution Network Optimization
+  - Timing support annotation and push function
+  - Support SigMesh Devices
+  - bug fixed
+
+## 2.12.46(2019-07-22)
+
+- bug 修复，推送消息可分类开启
+- bug fixed, Push Notification was classified. 
+
+## 2.10.97(2019-06-20)
+
+- 兼容新版本Cocoapods (>=1.6.0)
+- Support  CocoaPods (>= 1.6.0)
+
+## 2.10.96(2019-05-11)
+
+- bug 修复，新增免密码配网，新增消息推送的开启和关闭，新增开发环境推送支持
+- bug fixed, add device network configuration without password, add push notification to open or close, add development environment push support
+
 ## 2.8.44(2019-03-28)
 
 - 修复 Wi-Fi 子设备在线异常问题

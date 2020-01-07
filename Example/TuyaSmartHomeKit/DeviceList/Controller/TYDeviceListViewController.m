@@ -7,6 +7,7 @@
 //
 
 #import "TYDeviceListViewController.h"
+#import <TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit.h>
 #import "TYSwitchPanelViewController.h"
 #import "TYCommonPanelViewController.h"
 #import "TYDeviceListViewCell.h"
@@ -145,10 +146,13 @@
 
 - (void)reloadDataFromCloud {
     [self showProgressView:NSLocalizedString(@"loading", @"")];
-    
+    [[TuyaSmartSIGMeshManager sharedInstance] startScanWithScanType:ScanForProxyed meshModel:[TYSmartHomeManager sharedInstance].currentHome.sigMeshModel];
     WEAKSELF_AT
     [self.refreshControl beginRefreshing];
     [[TYSmartHomeManager sharedInstance].currentHome getHomeDetailWithSuccess:^(TuyaSmartHomeModel *homeModel) {
+//        NSUserDefaults *groupUserDefault = [[NSUserDefaults alloc] initWithSuiteName:APP_GROUP_NAME];
+//        [groupUserDefault setObject:@(homeModel.homeId) forKey:@"kCurrentHomeIdKey"];
+        
         [weakSelf_AT hideProgressView];
         [weakSelf_AT reloadData];
     } failure:^(NSError *error) {

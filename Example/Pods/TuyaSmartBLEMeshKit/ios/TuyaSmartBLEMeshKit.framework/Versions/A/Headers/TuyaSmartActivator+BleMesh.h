@@ -5,7 +5,7 @@
 //  Created by 高森 on 2018/9/20.
 //
 
-#import <TuyaSmartDeviceKit/TuyaSmartDeviceKit.h>
+#import <TuyaSmartActivatorKit/TuyaSmartActivatorKit.h>
 
 @interface TuyaSmartActivator (BleMesh)
 
@@ -15,10 +15,11 @@
  *  获取配网Token（有效期10分钟）
  *
  *  @param meshId meshId
- *  @param nodeId 短地址
+ *  @param nodeId nodeId
  *  @param productId 产品Id
  *  @param uuid   设备唯一值
  *  @param authKey 权限key
+ *  @param version version
  *  @param success 操作成功回调，返回配网Token
  *  @param failure 操作失败回调
  */

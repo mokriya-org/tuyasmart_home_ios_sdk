@@ -15,6 +15,7 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - CocoaAsyncSocket (7.6.3)
+  - Masonry (1.1.0)
   - MBProgressHUD (0.9.2)
   - MQTTClient (0.14.0):
     - MQTTClient/Core (= 0.14.0)
@@ -24,67 +25,84 @@ PODS:
   - MQTTClient/Manager (0.14.0):
     - MQTTClient/Min
   - MQTTClient/Min (0.14.0)
+  - OpenSSL-Universal (1.0.2.17)
   - Reachability (3.2)
-  - SDWebImage (4.4.6):
-    - SDWebImage/Core (= 4.4.6)
-  - SDWebImage/Core (4.4.6)
-  - TuyaSmartBaseKit (2.8.43):
+  - SDWebImage (5.2.2):
+    - SDWebImage/Core (= 5.2.2)
+  - SDWebImage/Core (5.2.2)
+  - TuyaSmartActivatorKit (3.12.7):
     - Reachability
+    - TuyaSmartDeviceKit
+  - TuyaSmartBaseKit (3.12.6):
     - TuyaSmartUtil
     - YYModel
-  - TuyaSmartBLEKit (2.8.43):
+  - TuyaSmartBLEKit (3.12.23):
+    - TuyaSmartActivatorKit
     - TuyaSmartBaseKit
     - TuyaSmartDeviceKit
     - TYBluetooth
-  - TuyaSmartBLEMeshKit (2.8.43):
+  - TuyaSmartBLEMeshKit (3.12.7):
+    - OpenSSL-Universal (= 1.0.2.17)
+    - TuyaSmartActivatorKit
     - TuyaSmartBaseKit
+    - TuyaSmartBLEKit
     - TuyaSmartDeviceKit
     - TYBluetooth
-  - TuyaSmartDeviceKit (2.8.43):
-    - CocoaAsyncSocket
-    - MQTTClient (= 0.14.0)
+  - TuyaSmartDeviceKit (3.12.9):
     - TuyaSmartBaseKit
-  - TuyaSmartFeedbackKit (2.8.43):
+    - TuyaSmartMQTTChannelKit
+    - TuyaSmartSocketChannelKit
+  - TuyaSmartFeedbackKit (3.12.2):
     - TuyaSmartBaseKit
-  - TuyaSmartHomeKit (2.8.43):
+  - TuyaSmartHomeKit (3.12.7):
+    - TuyaSmartActivatorKit
     - TuyaSmartBaseKit
     - TuyaSmartBLEKit
     - TuyaSmartBLEMeshKit
     - TuyaSmartDeviceKit
     - TuyaSmartFeedbackKit
     - TuyaSmartMessageKit
+    - TuyaSmartMQTTChannelKit
     - TuyaSmartSceneKit
+    - TuyaSmartSocketChannelKit
     - TuyaSmartTimerKit
-  - TuyaSmartMessageKit (2.8.43):
+  - TuyaSmartMessageKit (3.12.2):
     - TuyaSmartBaseKit
-  - TuyaSmartSceneKit (2.8.43):
+  - TuyaSmartMQTTChannelKit (3.12.7):
+    - MQTTClient (= 0.14.0)
+    - TuyaSmartBaseKit
+  - TuyaSmartSceneKit (3.12.9):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceKit
-  - TuyaSmartTimerKit (2.8.43):
+  - TuyaSmartSocketChannelKit (3.12.6):
+    - CocoaAsyncSocket
+    - TuyaSmartBaseKit
+  - TuyaSmartTimerKit (3.12.5):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceKit
-  - TuyaSmartUtil (2.8.43):
-    - UICKeyChainStore
-  - TYBluetooth (2.8.43)
-  - UICKeyChainStore (2.1.2)
+  - TuyaSmartUtil (3.12.6)
+  - TYBluetooth (3.12.5)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - BlocksKit
+  - Masonry
   - MBProgressHUD (~> 0.9.2)
+  - Reachability
   - SDWebImage
   - TuyaSmartHomeKit
-  - TuyaSmartUtil
-  - TYBluetooth
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BlocksKit
     - CocoaAsyncSocket
+    - Masonry
     - MBProgressHUD
     - MQTTClient
+    - OpenSSL-Universal
     - Reachability
     - SDWebImage
+    - TuyaSmartActivatorKit
     - TuyaSmartBaseKit
     - TuyaSmartBLEKit
     - TuyaSmartBLEMeshKit
@@ -92,34 +110,39 @@ SPEC REPOS:
     - TuyaSmartFeedbackKit
     - TuyaSmartHomeKit
     - TuyaSmartMessageKit
+    - TuyaSmartMQTTChannelKit
     - TuyaSmartSceneKit
+    - TuyaSmartSocketChannelKit
     - TuyaSmartTimerKit
     - TuyaSmartUtil
     - TYBluetooth
-    - UICKeyChainStore
     - YYModel
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MQTTClient: eea2eaaa6ddef852a1019a4dda091e22ad928b58
+  OpenSSL-Universal: ff04c2e6befc3f1247ae039e60c93f76345b3b5a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
-  TuyaSmartBaseKit: c1798280150db605f6d86856822925dcf12af526
-  TuyaSmartBLEKit: 1cb7f659d52e5c3bcd1f1f623abb39104eb4a78f
-  TuyaSmartBLEMeshKit: ae228a24d93a308ef1f5fd75f6bee8c44b7f9393
-  TuyaSmartDeviceKit: b8fdfb946879a2c19f685372d494e0b99d3f6511
-  TuyaSmartFeedbackKit: 79d165de51fa80cd9733dbfea047d26329c8f136
-  TuyaSmartHomeKit: 2bd231108b064a6cad097b23478db040263033d8
-  TuyaSmartMessageKit: 7ff813a0b12b2191d3440605b09b815e208136bb
-  TuyaSmartSceneKit: f5e684da34c31bf87d3241e36c5f7e9a36255d54
-  TuyaSmartTimerKit: 3769768e51cbe88a5484ab3a2766efb7a85bcbc6
-  TuyaSmartUtil: e113cab92bfa482bc129bbe1a0849a048829d510
-  TYBluetooth: 1a5dcabc5d37c162ffb7bb800eb1b3fffd8be2ad
-  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  SDWebImage: 5fcdb02cc35e05fc35791ec514b191d27189f872
+  TuyaSmartActivatorKit: 5fbff80e389d56f605b9ec6101a17d0766939ad2
+  TuyaSmartBaseKit: fd8e2e0f7d7781f57850091f3c7d27216fe89362
+  TuyaSmartBLEKit: 28e1bf6ed3fc6b422c40fe1c807f6837b7eb0ffb
+  TuyaSmartBLEMeshKit: 4e9c6f6bc5d1a2c5f466ce74926b65e0ba3fe435
+  TuyaSmartDeviceKit: f46b65bb594917037c7b3e2af4c49bcd8617a924
+  TuyaSmartFeedbackKit: f847e9c8f19c9cb561e4e11bb1bc0f515ba5b11a
+  TuyaSmartHomeKit: dc842f1368c369caf61b0980fb2685700df19e32
+  TuyaSmartMessageKit: e732a8e2f8cc8e3d3d5edf2ad9c269c245371d23
+  TuyaSmartMQTTChannelKit: ed976d51c2446b49c560fa1ddfcc5e4bded7ddeb
+  TuyaSmartSceneKit: 8cc21b908f81c4dbdef77b1f08b9d2bd9a83801b
+  TuyaSmartSocketChannelKit: b16424b6be161d8cb647a1e53ff625edf39caf27
+  TuyaSmartTimerKit: a2c68a1e845110f0e9b33753c92fbe1cf316e2f4
+  TuyaSmartUtil: 9bdf87c8563374dfae44a876294feb58a4f8e15a
+  TYBluetooth: 1eb0b1fdd7b6bc810e4c7c4a87d42084562a6a2e
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ca64abc527dd2856d175b4c156c4567e0396ddd1
+PODFILE CHECKSUM: d40578d972a53cf119d317b2573556a6a1dc0c55
 
-COCOAPODS: 1.7.0.beta.2
+COCOAPODS: 1.7.5

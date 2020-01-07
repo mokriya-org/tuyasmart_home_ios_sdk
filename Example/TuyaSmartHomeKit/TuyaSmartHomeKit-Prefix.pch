@@ -18,10 +18,14 @@
 #import <Foundation/Foundation.h>
 #import <BlocksKit/BlocksKit.h>
 #import <BlocksKit/BlocksKit+UIKit.h>
+#import "TYUserDefine.h"
 #import "TPUtils.h"
 #import "TPViews.h"
 #import "TPBaseViewController.h"
 #import "TYTheme.h"
+#import "UIColor+TYHex.h"
+#import "UILabel+TYFactory.h"
+#import "NSString+TYBounding.h"
 
 #import <TuyaSmartHomeKit/TuyaSmartKit.h>
 

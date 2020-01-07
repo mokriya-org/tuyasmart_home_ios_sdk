@@ -30,8 +30,8 @@
     [[TuyaSmartSDK sharedInstance] setDebugMode:YES];
 #endif
     
-    // TODO: Input your appKey and secretKey
-    [[TuyaSmartSDK sharedInstance] startWithAppKey:<#your_app_key#> secretKey:<#your_secret_key#>];
+//    [TuyaSmartSDK sharedInstance].appGroupId = APP_GROUP_NAME;
+    [[TuyaSmartSDK sharedInstance] startWithAppKey:SDK_APPKEY secretKey:SDK_APPSECRET];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -63,14 +63,7 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
-    NSString *pushId = [[[[deviceToken description]
-                          stringByReplacingOccurrencesOfString:@" " withString:@""]
-                         stringByReplacingOccurrencesOfString:@"<" withString:@""]
-                        stringByReplacingOccurrencesOfString:@">" withString:@""];
-    
-    NSLog(@"pushId is %@", pushId);
-    
-    [[TuyaSmartSDK sharedInstance] setValue:pushId forKey:@"deviceToken"];
+    [TuyaSmartSDK sharedInstance].deviceToken = deviceToken;
 }
 
 @end

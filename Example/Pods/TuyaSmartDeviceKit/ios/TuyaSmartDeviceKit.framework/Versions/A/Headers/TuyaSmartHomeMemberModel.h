@@ -7,34 +7,38 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TuyaSmartDeviceModelUtils.h"
 
 @interface TuyaSmartHomeMemberModel : NSObject
 
-// 成员Id
+// member Id
 @property (nonatomic, assign) long long memberId;
 
-// 成员头像
+// Head portraits of members
 @property (nonatomic, strong) NSString *headPic;
 
-// 成员名字
+// name of members
 @property (nonatomic, strong) NSString *name;
 
-// 是否管理员
-@property (nonatomic, assign) BOOL isAdmin;
+// admin or not
+@property (nonatomic, assign) BOOL isAdmin __deprecated_msg("The property will be deprecated and remove in a future version，Please use role");
 
-// 家庭Id
+// role
+@property (nonatomic, assign) TYHomeRoleType role;
+
+// home Id
 @property (nonatomic, assign) long long homeId;
 
-// 账号
+// mobile
 @property (nonatomic, strong) NSString *mobile;
 
-// 用户名
+// user name
 @property (nonatomic, strong) NSString *userName;
 
-// 用户Id
+// uid
 @property (nonatomic, strong) NSString *uid;
 
-// 处理状态
-@property (nonatomic, assign) NSInteger dealStatus;
+// state of deal
+@property (nonatomic, assign) TYHomeStatus dealStatus;
 
 @end
