@@ -1,0 +1,1 @@
+../../../../TuyaSmartDeviceKit/ios/TuyaSmartDeviceKit.framework/Versions/A/Headers/TuyaSmartStandSchemaModel.h

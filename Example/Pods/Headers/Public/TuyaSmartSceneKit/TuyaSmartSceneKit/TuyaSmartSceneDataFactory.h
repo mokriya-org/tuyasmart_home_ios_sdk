@@ -1,0 +1,1 @@
+../../../../TuyaSmartSceneKit/ios/TuyaSmartSceneKit.framework/Versions/A/Headers/TuyaSmartSceneDataFactory.h
