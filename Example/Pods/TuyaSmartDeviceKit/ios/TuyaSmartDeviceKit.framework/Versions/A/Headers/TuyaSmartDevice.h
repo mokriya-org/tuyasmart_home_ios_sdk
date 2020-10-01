@@ -11,6 +11,7 @@
 
 #import <TuyaSmartUtil/TuyaSmartUtil.h>
 #import "TuyaSmartFirmwareUpgradeModel.h"
+#import "TuyaSmartFirmwareUpgradeStatusModel.h"
 #import "TuyaSmartDeviceModel.h"
 #import "TuyaSmartMQTTMessageModel.h"
 
@@ -83,6 +84,7 @@ typedef enum : NSUInteger {
 - (void)device:(TuyaSmartDevice *)device firmwareUpgradeProgress:(NSInteger)type progress:(double)progress;
 
 /**
+<<<<<<< HEAD
  *  the delegate of device firmware upgrade status update
  *  设备升级状态的回调
  *
@@ -90,6 +92,15 @@ typedef enum : NSUInteger {
  *  @param upgradeStatus  upgrade status
  */
 - (void)device:(TuyaSmartDevice *)device type:(NSInteger)type upgradeStatus:(TuyaSmartDeviceUpgradeStatus)upgradeStatus;
+=======
+*  the delegate of device firmware upgrade status update
+*  设备升级状态的回调
+*
+*  @param device              设备模型 deviceModel
+*  @param upgradeStatusModel  设备升级状态模型 upgradeStatusModel
+*/
+- (void)device:(TuyaSmartDevice *)device firmwareUpgradeStatusModel:(TuyaSmartFirmwareUpgradeStatusModel *)upgradeStatusModel;
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
 
 /**
  *  Wifi signal strength callback.
@@ -121,6 +132,18 @@ typedef enum : NSUInteger {
 #pragma - deprecated
 
 /**
+<<<<<<< HEAD
+=======
+ *  the delegate of device firmware upgrade status update
+ *  设备升级状态的回调
+ *
+ *  @param device         deviceModel
+ *  @param upgradeStatus  upgrade status
+ */
+- (void)device:(TuyaSmartDevice *)device type:(NSInteger)type upgradeStatus:(TuyaSmartDeviceUpgradeStatus)upgradeStatus __deprecated_msg("This method is deprecated, Use device:firmwareUpgradeStatusModel: instead");
+
+/**
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
  *  Device firmware upgrade success
  *  固件升级成功代理回调
  *

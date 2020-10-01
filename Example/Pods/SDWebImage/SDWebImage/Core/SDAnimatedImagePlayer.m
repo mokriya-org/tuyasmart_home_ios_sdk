@@ -179,12 +179,20 @@
 #pragma mark - Animation Control
 - (void)startPlaying {
     [self.displayLink start];
+<<<<<<< HEAD
     // Calculate max buffer size
     [self calculateMaxBufferCount];
+=======
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
     // Setup frame
     if (self.currentFrameIndex == 0 && !self.currentFrame) {
         [self setupCurrentFrame];
     }
+<<<<<<< HEAD
+=======
+    // Calculate max buffer size
+    [self calculateMaxBufferCount];
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
 }
 
 - (void)stopPlaying {
@@ -209,6 +217,10 @@
     }
     self.currentFrameIndex = index;
     self.currentLoopCount = loopCount;
+<<<<<<< HEAD
+=======
+    self.currentFrame = [self.animatedProvider animatedImageFrameAtIndex:index];
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
     [self handleFrameChange];
 }
 
@@ -284,7 +296,11 @@
             return;
         }
         
+<<<<<<< HEAD
         // Otherwise, we shoudle be ready to display next frame
+=======
+        // Otherwise, we should be ready to display next frame
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
         self.needsDisplayWhenImageBecomesAvailable = YES;
         self.currentFrameIndex = nextFrameIndex;
         self.currentTime -= currentDuration;
@@ -299,7 +315,11 @@
         if (nextFrameIndex == 0) {
             // Update the loop count
             self.currentLoopCount++;
+<<<<<<< HEAD
             [self handleLoopChnage];
+=======
+            [self handleLoopChange];
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
             
             // if reached the max loop count, stop animating, 0 means loop indefinitely
             NSUInteger maxLoopCount = self.totalLoopCount;
@@ -352,7 +372,11 @@
     }
 }
 
+<<<<<<< HEAD
 - (void)handleLoopChnage {
+=======
+- (void)handleLoopChange {
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
     if (self.animationLoopHandler) {
         self.animationLoopHandler(self.currentLoopCount);
     }

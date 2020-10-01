@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "SDWebImageCompat.h"
 
+<<<<<<< HEAD
 // Cross-platform display link wrapper. Do not retain the target
 // Use `CADisplayLink` on iOS/tvOS, `CVDisplayLink` on macOS, `NSTimer` on watchOS
 
+=======
+/// Cross-platform display link wrapper. Do not retain the target
+/// Use `CADisplayLink` on iOS/tvOS, `CVDisplayLink` on macOS, `NSTimer` on watchOS
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
 @interface SDDisplayLink : NSObject
 
 @property (readonly, nonatomic, weak, nullable) id target;

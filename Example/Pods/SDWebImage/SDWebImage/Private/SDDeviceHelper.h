@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "SDWebImageCompat.h"
 
+<<<<<<< HEAD
+=======
+/// Device information helper methods
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
 @interface SDDeviceHelper : NSObject
 
 + (NSUInteger)totalMemory;

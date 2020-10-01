@@ -9,6 +9,7 @@
 #ifndef TuyaSmart_BleMeshSubDeviceModuleModel
 #define TuyaSmart_BleMeshSubDeviceModuleModel
 
+<<<<<<< HEAD
 typedef enum : NSUInteger {
     TuyaSmartDeviceUpgradeStatusDefault = 0,    // default 默认不需要升级的
     TuyaSmartDeviceUpgradeStatusReady,          // ready  硬件准备就绪
@@ -20,7 +21,10 @@ typedef enum : NSUInteger {
     TuyaSmartDeviceUpgradeStatusTimeout         // timeout 升级超时
 } TuyaSmartDeviceUpgradeStatus;
 
+=======
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
 #import <Foundation/Foundation.h>
+#import "TuyaSmartDeviceModelUtils.h"
 
 @interface TuyaSmartDeviceMcuModel : NSObject
 

@@ -12,7 +12,12 @@
 
 typedef enum : NSInteger{
     kGeoFenceTypeReach,
+<<<<<<< HEAD
     kGeoFenceTypeExit
+=======
+    kGeoFenceTypeExit,
+    kGeoFenceTypeNotSet
+>>>>>>> 117b2acc5143ed0f766ddbdb29948ff08b7331e7
 }GeoFenceType;
 
 //为了方便处理多语言，本类不处理条件的exprDisplay，也就是条件显示相关的逻辑，需要上层自行拼装处理。
