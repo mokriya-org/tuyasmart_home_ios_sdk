@@ -1,3 +1,6 @@
+This is deprecated 
+Use  - https://github.com/mokriya-org/tuya_sdk_ios instead
+
 # Tuya Smart iOS SDK
 
 [中文版](README-zh.md) | [English](README.md)
